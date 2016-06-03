@@ -1,19 +1,16 @@
-.fr{
-    background-color: red;
+thead{
+    background-color: #C73D27;
+    color: #fff;
 }
 
-.dr{
-    background-color: green;
-}
-
-.sr{
-    background-color: yellow;
-}
-
-.small-table{
+thead th{
+    text-align: center;
     border: 1px solid  #000;
 }
 
-tbody tr{
-    border-top: 1px solid green;
+tbody td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border: 1px solid  #000;
 }
