@@ -1,0 +1,187 @@
+.questionnaire{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.questionnaire > h1, .form-title{
+    text-align: center;
+    font-size: 25px;
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.questionnaire__info-img{
+    text-align: center;
+}
+
+.questionnaire__info-img > img{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.questionnaire__info p{
+    color: #6a6969;
+    font-size: 14px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.questionnaire__info p:first-child{ padding-top: 20px;}
+.questionnaire__info p:last-child{ padding-bottom: 20px;}
+
+.questionnaire__form {
+    position: relative;
+    background: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 5px solid #f3f1e4;
+    margin: 0 0 10px 0;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.questionnaire__form label{
+    font-weight: normal;
+}
+
+.questionnaire__form .tabs-link{
+    outline: none;
+}
+
+.questionnaire__form .tab-pane{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #6a6969;
+    font-size: 14px;
+}
+
+.questionnaire__form div{
+    margin-bottom: 20px;
+}
+
+.questionnaire__form input, .questionnaire__form textarea{
+    outline: none;
+    border: 1px solid  #ccc;
+    padding: 5px 10px;
+}
+
+.questionnaire__form input[type=radio]{
+    margin-bottom: 7px;
+    outline: none;
+
+}
+
+
+.questionnaire__form textarea{
+    width: 80%;
+    min-width: 80%;
+    max-width: 80%;
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    resize: none;
+}
+
+.questionnaire__form input[type=date]{
+    width: 125px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.user-info input{
+    margin-bottom: 5px;
+    width: 50%;
+    padding-left: 35px;
+    padding-right: 10px;
+}
+
+.user-info p{
+    margin-bottom: 0;
+}
+
+.user-info .user-info-btn{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.user-info-btn input[type=submit]{
+    background-color: #F0542D;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.user-info-btn input[type=submit]:hover{
+    background-color: transparent;
+    color: #F0542D;
+    border: 1px solid #F0542D;
+}
+
+.input-skin{
+    position: relative;
+}
+
+.icon-user:before, .icon-phone:before, .icon-mail:before, .icon-earth:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+.icon-earth:before{
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/earth.png);
+}
+
+.icon-user:before{
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/user.png);
+}
+
+.icon-phone:before{
+    width: 11px;
+    height: 16px;
+    background-image: url(../img/iPhone.png);
+}
+
+.icon-mail:before{
+    width: 16px;
+    height: 12px;
+    background-image: url(../img/mail-img.png);
+}
+
+.radio-text{
+    color: #989693;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.questionnaire__form .small-input{
+    width: 50px;
+    margin-bottom: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+@media (max-width: 768px){
+    .user-info-btn input[type="submit"]{
+        margin: 0;
+    }
+}

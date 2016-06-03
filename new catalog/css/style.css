@@ -1,0 +1,158 @@
+h1{
+      font-family: "Helvetica Neue";
+      font-weight: bold;
+      font-size: 24px;
+      color: #000;
+      text-align: center;
+}
+
+.catalog{
+    border: 2px solid  #c1c1c1;
+    padding: 68px 193px 100px 66px;
+}
+
+.catalog__product{
+    border: 1px solid  #c1c1c1;
+    padding: 22px 22px 5px 22px;
+}
+
+.catalog__product:hover{
+    -webkit-box-shadow: -1px 5px 9px 8px #e8e8e8;
+    box-shadow: -1px 5px 9px 8px #e8e8e8;
+}
+
+.catalog__product-img-skin img{
+    width: 100%;
+}
+
+.catalog__product-advantages-title{
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+    padding-left: 20px;
+}
+
+.catalog__product-advantages ul{
+    list-style: none;
+}
+
+.catalog__product-advantages ul li{
+    position: relative;
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    color: #000;
+}
+
+.catalog__product-advantages ul li:after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-image: url(../img/icon-catalog-list.png);
+    position: absolute;
+    top: 7px;
+    left: -15px;
+}
+
+.catalog__product-guarantee{
+    position: relative;
+    height: 110px;
+    text-align: center;
+}
+
+.catalog__product-guarantee p{
+    position: relative;
+    padding-top: 50px;
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    color: #000;
+}
+
+.catalog__product-guarantee p:after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 38px;
+    background-image: url(../img/icon-catalog-guarantee.png);
+    position: absolute;
+    top: -30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.catalog__product-guarantee-btn-skin{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.catalog__product-guarantee-btn-skin a{
+    background-color: #c73d27;
+    color: #fff;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid transparent;
+}
+
+.catalog__product-guarantee-btn-skin a:hover{
+    color: #c73d27;
+    border: 1px solid  #c73d27;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.catalog__product-advantages-title + p{
+    font-family: "Helvetica Neue";
+    font-size: 13px;
+    color: #000;
+}
+
+@media (max-width: 767px){
+    .catalog{
+        padding: 20px;
+    }
+
+    .catalog__product-advantages-title{
+        padding-left: 0;
+    }
+
+    .catalog__product-advantages ul{
+        padding-left: 15px;
+    }
+
+    .catalog__product{
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 767px){
+    .catalog__product-img-skin{
+        text-align: center;
+    }
+
+    .catalog__product-img-skin img{
+        width: 60%;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px){
+    .catalog{
+        padding: 30px 50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .catalog__product-guarantee{
+        height: 130px;
+    }
+}

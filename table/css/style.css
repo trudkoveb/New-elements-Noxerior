@@ -1,0 +1,19 @@
+.fr{
+    background-color: red;
+}
+
+.dr{
+    background-color: green;
+}
+
+.sr{
+    background-color: yellow;
+}
+
+.small-table{
+    border: 1px solid  #000;
+}
+
+tbody tr{
+    border-top: 1px solid green;
+}

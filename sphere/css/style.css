@@ -1,0 +1,208 @@
+h2{
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.sphere{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.sphere__nitrogen-example, .sphere__oxygen-example{
+    width: 300px;
+    height: 270px;
+    border-radius: 8px;
+    background-position: center top;
+    margin-bottom: 39px;
+}
+
+.vine, .oil, .laser, .chemistry, .packaging, .electronics{
+    position: relative;
+}
+
+.water, .resources, .casting, .medicine, .fish, .welding{
+    position: relative;
+}
+
+.vine{
+    background-image: url(../img/pic/vine.jpg);
+}
+
+.vine:after, .oil:after, .laser:after, .chemistry:after, .packaging:after, .electronics:after{
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    font-family: "Helvetica Neue";
+    color: #fff;
+    font-size: 24px;
+    text-shadow: #000 1px 0px, #000 1px 1px, #000 0px 1px, #000 -1px 1px, #000 -1px 0px, #000 -1px -1px, #000 0px -1px, #000 1px -1px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px;
+}
+
+.vine:after{
+    content: "Розлив вина";
+    width: 127px;
+    height: 29px;
+}
+
+.oil{
+    background-image: url(../img/pic/oil.jpg);
+}
+
+.oil:after{
+    content: "Нефтедобыча";
+    width: 127px;
+    height: 29px;
+}
+
+.laser{
+    background-image: url(../img/pic/laser.jpg);
+}
+
+.laser:after{
+    content: "Лазерная резка";
+    width: 156px;
+    height: 29px;
+}
+
+.chemistry{
+    background-image: url(../img/pic/chemistry.jpg);
+    background-position: center left;
+}
+
+.chemistry:after{
+    content: "Нефтехимия";
+    width: 127px;
+    height: 29px;
+}
+
+
+.packaging{
+    background-image: url(../img/pic/packaging.jpg);
+}
+
+.packaging:after{
+    content: "Упаковка";
+    width: 99px;
+    height: 29px;
+}
+
+.electronics{
+    background-image: url(../img/pic/electronics.jpg);
+}
+
+.electronics:after{
+    content: "Электроника";
+    width: 127px;
+    height: 29px;
+}
+
+.water:after, .resources:after, .casting:after, .medicine:after, .fish:after, .welding:after{
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    font-family: "Helvetica Neue";
+    color: #fff;
+    font-size: 24px;
+    text-shadow: #000 1px 0px, #000 1px 1px, #000 0px 1px, #000 -1px 1px, #000 -1px 0px, #000 -1px -1px, #000 0px -1px, #000 1px -1px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px, #000 0 0 3px;
+}
+
+.water{
+    background-image: url(../img/pic/water.jpg);
+}
+
+.water:after{
+    content: "Водоочистка";
+    width: 127px;
+    height: 29px;
+}
+
+.resources{
+    background-image: url(../img/pic/resources.jpg);
+}
+
+.resources:after{
+    content: "Добыча ископаемых";
+    width: 209px;
+    height: 29px;
+}
+
+.casting{
+    background-image: url(../img/pic/casting.jpg);
+}
+
+.casting:after{
+    content: "Литье";
+    width: 62px;
+    height: 29px;
+}
+
+.medicine{
+    background-image: url(../img/pic/medicine.jpg);
+}
+
+.medicine:after{
+    content: "Медицина";
+    width: 108px;
+    height: 29px;
+}
+
+.fish{
+    background-image: url(../img/pic/fish.jpg);
+}
+
+.fish:after{
+    content: "Разведение рыб";
+    width: 161px;
+    height: 29px;
+}
+
+.welding{
+    background-image: url(../img/pic/welding.jpg);
+}
+
+.welding:after{
+    content: "Сварка и резка";
+    width: 151px;
+    height: 29px;
+}
+
+.sphere__oxygen-text-title{
+    font-size: 18px;
+    font-family: "Helvetica Neue";
+    color: #000;
+}
+
+.sphere__oxygen-text .sphere__oxygen-text-title + p{
+    font-family: "Helvetica Neue";
+    color: #000;
+}
+
+@media (max-width: 767px){
+    .sphere{
+        padding: 0;
+        text-align: center;
+    }
+
+    .sphere__nitrogen-example, .sphere__oxygen-example{
+        width: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px){
+    .sphere{
+        padding: 0;
+    }
+}

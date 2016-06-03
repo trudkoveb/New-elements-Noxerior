@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Опросный лист</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+    <div class="breadcrumbS">nvdnvndkv dvjkdnv dnvjdncjv dnvjdnd</div>
+      <div class="questionnaire">
+        <h1>Опросный лист</h1>
+        <div class="questionnaire__form">
+          <ul id="myTabs" class="nav nav-tabs">
+          <li class=""><a class="tabs-link" id="home-tab" href="#air-form" data-toggle="tab">Воздухоразделительное оборудование</a></li>
+          <li class="active"><a class="tabs-link" id="profile-tab" href="#water-form" data-toggle="tab">Водоохлаждающее оборудование</a></li>
+          <li><a class="tabs-link" id="profile-tab" href="#compress" data-toggle="tab">Компрессорное оборудование</a></li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div id="air-form" class="tab-pane fade">
+            <p class="form-title">Опросный лист для подбора воздухоразделительного оборудования</p>
+              <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                 <span><label for="qf-10-needed">Необходимый газ*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" id="qf-10-needed" name="qf-10-needed" value=""><span class="radio-text">Азот</span><br>
+                  <input type="radio" id="qf-10-needed" name="qf-10-needed" value=""><span class="radio-text">Кислород</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-10-concentration">Концентрация газа*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="об. %" id="qf-10-concentration"><br>
+                </div>
+                <div class="col-md-6">
+                 <span><label for="qf-12-consumption">Расход газа*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input class="small-input" type="text" id="qf-12-consumption"><br>
+                  <input type="radio" id="qf-10-needed" name="qf-10-needed" value=""><span class="radio-text">Нм3/час</span><br>
+                  <input type="radio" id="qf-10-needed" name="qf-10-needed" value=""><span class="radio-text">л/мин</span><br>
+                  <input type="radio" id="qf-10-needed" name="qf-10-needed" value=""><span class="radio-text">кг/час</span><br>
+                  <input type="radio" id="qf-10-needed" name="qf-10-needed" value=""><span class="radio-text">баллонов в сутки</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-11-gas_pressure">Давление газа (изб)*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="Бар" id="qf-11-gas_pressure">
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-12--fld-g-point">Точка росы</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" id="qf-10-needed" name="qf-10-needed" value=""><span class="radio-text">-40 °С</span><br>
+                  <input type="radio" id="qf-10-needed" name="qf-10-needed" value=""><span class="radio-text">-60 °С</span><br>
+                  <input  class="small-input" type="text" id="qf-12--fld-g-point"><span class="radio-text">°С</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-12--fld-place">Размещение*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-place" value=""><span class="radio-text">Стационарное</span><br>
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-place" value=""><span class="radio-text">Контейнерное</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-12--fld-scope">Сфера применения*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" id="qf-12--fld-scope">
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-4-addon">Дополнительно</label></span>
+                </div>
+                <div class="col-md-6">
+                 <textarea name="" id="qf-4-addon" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            </form>
+            <form class="user-info" action="">
+              <div class="row">
+                <div class="col-md-12">
+                  <p><label for="company">Название предприятия*</label></p>
+                  <div class="input-skin">
+                    <input type="text" id="company">
+                  </div>
+                  <p><label for="city">Город. Страна*</label></p>
+                  <div class="input-skin icon-earth">
+                    <input type="text" id="city">
+                  </div>
+                  <p><label for="person">Контактное лицо*</label></p>
+                  <div class="input-skin icon-user">
+                    <input type="text" id="person">
+                  </div>
+                  <p><label for="phone-number">Телефон*</label></p>
+                  <div class="input-skin icon-phone">
+                    <input type="text" id="phone-number" placeholder="+7 (912) 345-67-89">
+                  </div>
+                  <p><label for="mail">Email*</label></p>
+                  <div class="input-skin icon-mail">
+                    <input type="text" id="mail">
+                  </div>
+                  <div class="row user-info-btn">
+                    <div class="col-md-6">
+                      <input type="submit" value="Отправить">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="submit" value="Скачать">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            </div>
+              <div id="water-form" class="tab-pane fade active in">
+              <p class="form-title">Опросный лист для подбора водоохлаждающего оборудования</p>
+              <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                 <span><label for="qf-4-power">Требуется холодопроизводительность*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="кВт" id="qf-4-power">
+                </div>
+                <hr>
+                <div class="col-md-6">
+                  <span><label for="qf-4-coolant">Хладоноситель*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="Нм3/час" id="qf-4-coolant">
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-4-temp-begin">Температура хладносителя начальная*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="кВт" id="qf-4-temp-begin">
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-4--fld-temp-end">Температура хладносителя конечная*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="кВт" id="qf-4--fld-temp-end">
+                </div>
+                <div class="col-md-6">
+                  <span><label for="">Охлаждение конденсатора*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" name="fa[condenser_cooling]" value=""><span class="radio-text">Воздушное</span><br>
+                  <input type="radio" name="fa[condenser_cooling]" value=""><span class="radio-text">Водяное</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="">Тип конденсатора*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" name="fa[condenser_type]" value=""><span class="radio-text">Встроенный</span><br>
+                  <input type="radio" name="fa[condenser_type]" value=""><span class="radio-text">Выносной</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="">Эксплуатация*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" name="fa[operation]" onClick="Show(0);"><label><span class="radio-text">Круглогодичная</span></label>
+                  <input type="radio" name="fa[operation]" onClick="Show(1);"><label><span class="radio-text">Период</span></label>
+                  <div id="questionnaire__form-calendar" style="display:none;">с <input type="text" class="datepicker-here"> по <input type="text" class="datepicker-here"></div>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="">Размещение*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" name="fa[placement]" value=""><span class="radio-text">В помещении</span><br>
+                  <input type="radio" name="fa[placement]" value=""><span class="radio-text">На улице</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-4-addon">Дополнительно</label></span>
+                </div>
+                <div class="col-md-6">
+                 <textarea name="" id="qf-4-addon" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            </form>
+            <form class="user-info" action="">
+              <div class="row">
+                <div class="col-md-12">
+                  <p><label for="company">Название предприятия*</label></p>
+                  <div class="input-skin">
+                    <input type="text" id="company">
+                  </div>
+                  <p><label for="city">Город. Страна*</label></p>
+                  <div class="input-skin icon-earth">
+                    <input type="text" id="city">
+                  </div>
+                  <p><label for="person">Контактное лицо*</label></p>
+                  <div class="input-skin icon-user">
+                    <input type="text" id="person">
+                  </div>
+                  <p><label for="phone-number">Телефон*</label></p>
+                  <div class="input-skin icon-phone">
+                    <input type="text" id="phone-number" placeholder="+7 (912) 345-67-89">
+                  </div>
+                  <p><label for="mail">Email*</label></p>
+                  <div class="input-skin icon-mail">
+                    <input type="text" id="mail">
+                  </div>
+                  <div class="row user-info-btn">
+                    <div class="col-md-6">
+                      <input type="submit" value="Отправить">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="submit" value="Скачать">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            </div>
+            <div id="compress" class="tab-pane fade">
+            <p class="form-title">Опросный лист для подбора компрессорного оборудования</p>
+              <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                 <span><label for="qf-12--fld-compressor-type">Тип компрессора*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-compressor-type" value=""><span class="radio-text">Винтовой</span><br>
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-compressor-type" value=""><span class="radio-text">Поршневой</span><br>
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-compressor-type" value=""><span class="radio-text">Дожимной (бустер)</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-12--fld-coercible-gas">Сжимаемый газ*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-coercible-gas" value=""><span class="radio-text">Воздух</span><br>
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-coercible-gas" value=""><span class="radio-text">Азот</span><br>
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-coercible-gas" value=""><span class="radio-text">Кислород</span><br>
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-coercible-gas" value=""><span class="radio-text">Другой</span>
+                  <input class="small-input" type="text" id="qf-12--fld-coercible-gas">
+                  </div>
+                <div class="col-md-6">
+                  <span><label for="qf-12-productivity">Производительность:*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="Нм3/час" id="qf-12-productivity">
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-12--fld-gas-pressure-inlet">Давление газа на входе (изб)*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-gas-pressure-inlet" value=""><span class="radio-text">Атмосферное</span><br>
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-gas-pressure-inlet" value="">
+                  <input class="small-input" type="text" id="qf-12--fld-gas-pressure-inlet"><span class="radio-text">Бар</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-12-gas_pressure_output">Давление газа на выходе (изб)*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" placeholder="Бар" id="qf-12-gas_pressure_output">
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-12--fld-frequency-regulation">Частотное Регулирование Производительности*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-frequency-regulation" value=""><span class="radio-text">Да</span><br>
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-frequency-regulation" value=""><span class="radio-text">Нет</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-12--fld-dehumidifier">Осушитель*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-dehumidifier" value=""><span class="radio-text">Рефрижераторный</span><br>
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-dehumidifier" value=""><span class="radio-text">Адсорбционный</span><br>
+                  <input type="radio" name="fa[condenser_type]" id="qf-12--fld-dehumidifier" value=""><span class="radio-text">Нет</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-12-temp">Температура окружающей среды*</label></span>
+                </div>
+                <div class="col-md-6">
+                  <span class="radio-text">мин </span><input class="small-input" type="text" id="qf-12-temp"><span class="radio-text">°С/ макс </span><input class="small-input" type="text"id="qf-12-temp"> <span class="radio-text">°С</span>
+                </div>
+                <div class="col-md-6">
+                  <span><label for="qf-4-addon">Дополнительно</label></span>
+                </div>
+                <div class="col-md-6">
+                 <textarea name="" id="qf-4-addon" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            </form>
+            <form class="user-info" action="">
+              <div class="row">
+                <div class="col-md-12">
+                  <p><label for="company">Название предприятия*</label></p>
+                  <div class="input-skin">
+                    <input type="text" id="company">
+                  </div>
+                  <p><label for="city">Город. Страна*</label></p>
+                  <div class="input-skin icon-earth">
+                    <input type="text" id="city">
+                  </div>
+                  <p><label for="person">Контактное лицо*</label></p>
+                  <div class="input-skin icon-user">
+                    <input type="text" id="person">
+                  </div>
+                  <p><label for="phone-number">Телефон*</label></p>
+                  <div class="input-skin icon-phone">
+                    <input type="text" id="phone-number" placeholder="+7 (912) 345-67-89">
+                  </div>
+                  <p><label for="mail">Email*</label></p>
+                  <div class="input-skin icon-mail">
+                    <input type="text" id="mail">
+                  </div>
+                  <div class="row user-info-btn">
+                    <div class="col-md-6">
+                      <input type="submit" value="Отправить">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="submit" value="Скачать">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    function Show(a) {
+            obj=document.getElementById("questionnaire__form-calendar");
+            if (a) obj.style.display="inline-block";
+            else obj.style.display="none";
+    }
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+  </body>
+</html>

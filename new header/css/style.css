@@ -1,0 +1,263 @@
+@font-face {
+    font-family: hattori_hanzo_light;
+    src: url(../fonts/hattori_hanzo_light.otf);
+}
+
+/* Header */
+
+.header__main-nav{
+  background-color: #3B4345;
+}
+
+.header__main-nav ul{
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.header__main-nav ul > li{
+  display: inline-block;
+  text-align: center;
+  margin-right: 50px;
+  padding: 5px 0;
+}
+
+.header__main-nav ul > li:last-child{ margin-right: 0;}
+
+.header__main-nav ul > li > a{
+  color: #fff;
+  text-decoration: none;
+  font-family: hattori_hanzo_light;
+}
+
+.header__main-nav ul > li > a:hover{
+  color: #c73d27;
+}
+
+.header__middle{
+  padding-top: 20px;
+}
+
+.header__contacts p{
+  margin: 0;
+  /*padding-left: 10px;*/
+}
+
+.header__contacts-icon{
+  position: relative;
+}
+
+.header__contacts-icon:before{
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  right: 130px;
+  background: url(../img/telephone.png) no-repeat;
+
+}
+
+.header__contacts{
+  text-align: right;
+}
+
+.header__contacts > a{
+  color: #cb4a35;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header__inner-nav{
+}
+
+.header__inner-nav ul{
+  padding-left: 0;
+  background-color: #3b4345;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.header__inner-nav > ul > li{
+  display: inline-block;
+  border-right: 4px solid  #fff;
+  width: 19.7%;
+}
+
+.header__inner-nav > ul > li:last-child {border-right: none;}
+
+.header__inner-nav ul > li > a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  display: block;
+  font-family: hattori_hanzo_light;
+}
+
+/* inner-header-nav */
+
+.header__inner-nav > ul > li{
+    position: relative;
+}
+
+.header__inner-nav li:first-child .hidden-menu{left: 0;}
+
+.hidden-menu > ul{
+  background-color: #f0f0f0;
+}
+
+.hidden-menu{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -4px;
+    z-index: 99999;
+    width: 102%;
+}
+
+.hidden-menu > ul{
+    display: table-cell;
+}
+
+.hidden-menu > ul > li{
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden-menu > ul > li:first-child{
+    /*padding-left: 10px;*/
+}
+
+/*.hidden-menu > ul > li:first-child > a{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0;
+}*/
+
+.hidden-menu > ul > li > a{
+    font-size: 14px;
+    font-family: hattori_hanzo_light;
+    color: #000;
+}
+
+.header__inner-nav > ul > li:hover .hidden-menu{
+    display: table;
+}
+
+.hidden-menu > ul > li:hover a{
+  background-color: #f0542d;
+  color: #fff;
+}
+
+
+.header__inner-nav > ul > li:first-child > .hidden-menu{
+  left: -1px;
+  width: 100.5%;
+}
+
+.header__inner-nav > ul > li:nth-child(2) > .hidden-menu{
+  width: 102.2%;
+}
+
+.header__inner-nav > ul > li:nth-child(4) > .hidden-menu{
+  width: 102.2%;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+
+
+@media (max-width: 768px){
+  header{
+    text-align: center;
+  }
+
+  header .header__contacts{
+    text-align: center;
+  }
+
+  .header__main-nav ul > li{
+    display: block;
+    margin-right: 0;
+  }
+
+ .header__logo{
+  padding-bottom: 20px;
+ }
+
+  .header__contacts-icon:before{
+    top: 0;
+    left: 50px;
+  }
+
+  .header__inner-nav > ul > li{
+    display: block;
+    border: none;
+    width: 100%;
+  }
+
+  .header__inner-nav{
+    display: none;
+  }
+
+  .mobile-nav{
+    display: block;
+  }
+
+  .navbar-collapse{
+    padding-left: ;
+    padding-right: 0;
+  }
+
+  .header__contacts-icon:before{
+    left: 30px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .mobile-nav{
+    display: block;
+  }
+
+  .header__inner-nav{
+    display: none;
+  }
+
+  .navbar-nav{
+    text-align: center;
+  }
+
+  .navbar-nav>li{
+    float: none;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .header__inner-nav > ul > li{
+    width: 18.7%;
+  }
+}
+
+@media (max-width: 574px){
+  .header__contacts-icon:before{
+    left: 10px;
+  }
+}
+
+@media (max-width: 487px){
+  .header__contacts-icon:before{
+    left: -20px;
+  }
+}
+
+@media (max-width: 382px){
+  .header__contacts-icon:before{
+    display: none;
+  }
+}
